@@ -3,121 +3,99 @@ import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
+import Container from '../components/Container';
+import { services } from '../utils/Data';
+import Meta from '../components/Meta';
 const Home = () => {
   return (
     <>
-      <section className="home-wrapper-1 py-5">
-        <div className="container-xxl"></div>
+    <Meta title="Sporst-io" />
+      <Container class1="home-wrapper-1 py-5">
         <div className="row">
-          <div className="col-6">
-            <div className="main-banner position-relative p-3">
-              <img src='images/main-banner-1.jpg' className='img-fluid rounded-3' alt='main banner' />
-              <div className='main-banner-content position-absolute'>
-                <h4><b style={{ color: "white" }}>All sports products</b></h4>
-                <h5 style={{ color: "#D7CF07" }}>Available here...</h5>
-                <p style={{ color: "#EFFFFA" }}>Starting from ₹199</p>
-                <Link className='button'>BUY NOW</Link>
-              </div>
-            </div>
-          </div>
-          <div className='col-6'>
-            <div className='d-flex flex-wrap align-items-center gap-10'>
-              <div className="small-banner position-relative ">
-                <img
-                  src='images/catbanner-01.jpg'
-                  className='img-fluid rounded-3'
-                  alt='small banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>--</h4>
-                  <h5>--</h5>
-                  <p>--</p>
-                </div>
-              </div>
-              <div className="small-banner position-relative ">
-                <img
-                  src='images/catbanner-02.jpg'
-                  className='img-fluid rounded-3'
-                  alt='small banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>--</h4>
-                  <h5>--</h5>
-                  <p>--</p>
-                </div>
-              </div>
-              <div className="small-banner position-relative ">
-                <img
-                  src='images/catbanner-03.jpg'
-                  className='img-fluid rounded-3'
-                  alt='small banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>--</h4>
-                  <h5>--</h5>
-                  <p>--</p>
-                </div>
-              </div>
-              <div className="small-banner position-relative ">
-                <img
-                  src='images/catbanner-04.jpg'
-                  className='img-fluid rounded-3'
-                  alt='small banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>--</h4>
-                  <h5>--</h5>
-                  <p>--</p>
+          <div className='d-flex gap-40'>
+            <div className="col-6">
+              <div className="main-banner position-relative">
+                <img src='images/main-banner-1.jpg' className='img-fluid rounded-3' alt='main banner' />
+                <div className='main-banner-content position-absolute'>
+                  <h4><b style={{ color: "white" }}>All sports products</b></h4>
+                  <h5 style={{ color: "#D7CF07" }}>Available here...</h5>
+                  <p style={{ color: "#EFFFFA" }}>Starting from ₹199</p>
+                  <Link className='button'>BUY NOW</Link>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className='home-wrapper-2 py-5'>
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <div className='services d-flex align-itmes-center justify-content-between'>
-                <div className='d-flex align-items-center gap-10'>
-                  <img src='images/service.png' alt='' />
-                  <div>
-                    <h6>Free shipping</h6>
-                    <p className='mb-0'>from all orders over $5</p>
+            <div className='col-6'>
+              <div className='d-flex flex-wrap align-items-center gap-10'>
+                <div className="small-banner position-relative ">
+                  <img
+                    src='images/catbanner-01.jpg'
+                    className='img-fluid rounded-3'
+                    alt='small banner' />
+                  <div className='small-banner-content position-absolute'>
+                    <h4>--</h4>
+                    <h5>--</h5>
+                    <p>--</p>
                   </div>
                 </div>
-                <div className='d-flex align-items-center gap-10'>
-                  <img src='images/service-02.png' alt='' />
-                  <div>
-                    <h6>Daily Surprise offers</h6>
-                    <p className='mb-0'>save up to 25% </p>
+                <div className="small-banner position-relative ">
+                  <img
+                    src='images/catbanner-02.jpg'
+                    className='img-fluid rounded-3'
+                    alt='small banner' />
+                  <div className='small-banner-content position-absolute'>
+                    <h4>--</h4>
+                    <h5>--</h5>
+                    <p>--</p>
                   </div>
                 </div>
-                <div className='d-flex align-items-center gap-10'>
-                  <img src='images/service-03.png' alt='' />
-                  <div>
-                    <h6>Spot 24/7</h6>
-                    <p className='mb-0'>shop with an expert</p>
+                <div className="small-banner position-relative ">
+                  <img
+                    src='images/catbanner-03.jpg'
+                    className='img-fluid rounded-3'
+                    alt='small banner' />
+                  <div className='small-banner-content position-absolute'>
+                    <h4>--</h4>
+                    <h5>--</h5>
+                    <p>--</p>
                   </div>
                 </div>
-                <div className='d-flex align-items-center gap-10'>
-                  <img src='images/service-04.png' alt='' />
-                  <div>
-                    <h6>Affordable prices</h6>
-                    <p className='mb-0'>Get factory default price</p>
-                  </div>
-                </div>
-                <div className='d-flex align-items-center gap-10'>
-                  <img src='images/service-05.png' alt='' />
-                  <div>
-                    <h6>secure payments</h6>
-                    <p className='mb-0'>100% protected payment</p>
+                <div className="small-banner position-relative ">
+                  <img
+                    src='images/catbanner-04.jpg'
+                    className='img-fluid rounded-3'
+                    alt='small banner' />
+                  <div className='small-banner-content position-absolute'>
+                    <h4>--</h4>
+                    <h5>--</h5>
+                    <p>--</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section className='home-wrapper-2 py-5'>
-        <div className='container-xxl'>
-          <div className='row'>
+      </Container>
+      <Container class1="home-wrapper-2 py-5">
+        <div className='row'>
+          <div className='col-12'>
+            <div className='services d-flex align-itmes-center justify-content-between'>
+              {services?.map((i, j) => {
+                return (
+                  <div className='d-flex align-items-center gap-10' key={j}>
+                    <img src={i.image} alt='services' />
+                    <div>
+                      <h6>{i.title}</h6>
+                      <p className='mb-0'>{i.tagline}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </Container>
+      <Container class1="home-wrapper-2 py-5">
+      <div className='row'>
             <div className='col-12'>
               <div className='categories d-flex align-itmes-center flex-wrap justify-content-between'>
                 <div className='d-flex gap align-items-center'>
@@ -179,10 +157,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="special-wrapper py-5 home-wrapper-2">
-        <div className='container-xxl'>
+      </Container> 
+      <Container class1="special-wrapper py-5 home-wrapper-2">
           <div className='row'>
             <div className='col-12'>
               <h3 className='section-heading'>
@@ -195,11 +171,9 @@ const Home = () => {
             <SpecialProduct />
             <SpecialProduct />
             <SpecialProduct />
-          </div>
         </div>
-      </section>
-      <section className="popular-wrapper py-5 home-wrapper-2">
-        <div className='container-xxl'>
+      </Container>
+      <Container class1="popular-wrapper py-5 home-wrapper-2">
           <div className='row'>
             <div className='col-12'>
               <h3 className='section-heading'>
@@ -212,10 +186,8 @@ const Home = () => {
             <ProductCard />
             <ProductCard />
           </div>
-        </div>
-      </section>
-      <section className='marquee-wrapper py-5'>
-        <div className='container-xxl'>
+      </Container>
+      <Container class1='marquee-wrapper py-5'>
           <div className='row'>
             <div className='col-12'>
               <div className='top-brands text-center'><b>Top Brands</b></div>
@@ -249,10 +221,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className='product-wrapper py-5 home-wrapper-2'>
-        <div className='container-xxl'>
+      </Container>
+      <Container class1='product-wrapper py-5 home-wrapper-2'>
           <div className='row'>
             <div className='col-12'>
               <h3 className='section-heading'>Featured collections</h3>
@@ -262,18 +232,17 @@ const Home = () => {
             <ProductCard />
             <ProductCard />
           </div>
-        </div>
-      </section>
-      <section className='shopping-wrapper text-center p-5'>
+      </Container>
+      <Container class1='shopping-wrapper text-center p-5'>
         <div>
-        <button type="button" className="btn btn-warning">SHOP NOW
-        
-        <div className='position-absolute bicurser'>
-          
+          <button type="button" className="btn btn-warning">SHOP NOW
+
+            <div className='position-absolute bicurser'>
+
+            </div>
+          </button>
         </div>
-        </button>
-        </div>
-      </section>
+      </Container>
     </>
   )
 }
