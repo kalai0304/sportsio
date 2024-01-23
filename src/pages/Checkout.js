@@ -89,7 +89,7 @@ const Checkout = () => {
                                         <div className='w-25 position-relative'>
                                             <span style={{top:"-10px",right:"2px"}}
                                             className='badge bg-secondary text-white rounded-circle p-2 position-absolute'>1</span>
-                                            <img className='img-fluid' src={watch} alt='product image'/>
+                                            <img className='img-fluid' src={watch} alt='product-image'/>
                                         </div>
                                         <div>
                                             <h5 className='total-price'>product title</h5>

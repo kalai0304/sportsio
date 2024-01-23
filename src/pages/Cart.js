@@ -26,7 +26,7 @@ const Cart = () => {
                                         <img
                                             src={watch}
                                             className='img-fluid'
-                                            alt='watch image'
+                                            alt='watch-image'
                                         />
                                     </div>
                                     <div className='w-75'>

@@ -20,8 +20,8 @@ const ProductCard = (props) => {
             <div className={` ${location.pathname === "/cricket" ? `gr-${grid}` : "col-3"} `}>
                 <Link
                     to=
-                    {`${location.pathname == "/" ? '/cricket/product/:id'
-                        : location.pathname == "/cricket/product/:id"
+                    {`${location.pathname === "/" ? '/cricket/product/:id'
+                        : location.pathname === "/cricket/product/:id"
                             ? "/cricket/product/:id"
                             : "/cricket/product/:id"
                         }`}
@@ -69,8 +69,8 @@ const ProductCard = (props) => {
             </div>
             <div className={` ${location.pathname === "/cricket" ? `gr-${grid}` : "col-3"} `}>
                 <Link to=
-                    {`${location.pathname == "/" ? '/cricket/product/:id'
-                        : location.pathname == "/cricket/product/:id"
+                    {`${location.pathname === "/" ? '/cricket/product/:id'
+                        : location.pathname === "/cricket/product/:id"
                             ? "/cricket/product/:id"
                             : "/cricket/product/:id"
                         }`}
