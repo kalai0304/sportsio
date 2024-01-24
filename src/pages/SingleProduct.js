@@ -62,13 +62,13 @@ const SingleProduct = () => {
                             </div>
                             <div className='other-product-image d-flex flex-wrap gap-12'>
                                 <div>
-                                    <img src='/images/camera.jpg' alt='camera img' className='img-fluid' />
+                                    <img src='/images/camera.jpg' alt='camera-img' className='img-fluid' />
                                 </div>
                                 <div>
-                                    <img src='/images/camera.jpg' alt='camera img' className='img-fluid' />
+                                    <img src='/images/camera.jpg' alt='camera-img' className='img-fluid' />
                                 </div>
                                 <div>
-                                    <img src='/images/camera.jpg' alt='camera img' className='img-fluid' />
+                                    <img src='/images/camera.jpg' alt='camera-img' className='img-fluid' />
                                 </div>
                                 <div>
                                     <img src='/images/camera.jpg' alt='camera img' className='img-fluid' />
