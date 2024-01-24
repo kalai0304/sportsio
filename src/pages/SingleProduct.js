@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Meta from '../components/Meta';
 import BreadCromp from '../components/BreadCromp';
 import ProductCard from '../components/ProductCard';
-import ReactStars from "react-rating-stars-component ";
+import ReactStars from "react-rating-stars-component";
 import { GoGitCompare } from "react-icons/go";
 import { GoHeart } from "react-icons/go";
 import Container from '../components/Container';
