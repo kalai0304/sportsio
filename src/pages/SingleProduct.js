@@ -41,23 +41,6 @@ const SingleProduct = () => {
                         <div className='col-6'>
                             <div className='main-product-image'>
                                 <div style={{ width: "100%" }}>
-                                    // <ReactImageMagnify {...{
-                                    //     smallImage: {
-                                    //         alt: 'image',
-                                    //         isFluidWidth: true,
-                                    //         src: "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=600",
-                                    //         width: 140,
-                                    //         height: 162
-                                    //     },
-                                    //     largeImage: {
-                                    //         src: "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=600",
-                                    //         width: 836,
-                                    //         height: 1100
-                                    //     },
-                                    //     // enlargedImagePosition: 'over',
-                                    //     lensStyle: { backgroundColor: 'rgba(0,0,0,0.6)' }
-                                    // }}
-                                    // />
                                 </div>
                             </div>
                             <div className='other-product-image d-flex flex-wrap gap-12'>
